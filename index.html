@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Weather</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <section class="topbar">
+            <img src="/images/weather app.png" alt="" />
+            <h1>Weather App</h1>
+        </section>
+
+        <section class="main">
+            <div class="mainCard">
+                <h1 id="cityName">City</h1>
+                <h2 id="day">Day</h2>
+                <img src="/images/cloudy.png" alt="" id="weatherTypeImg" />
+                <div id="weatherType">Weather</div>
+                <div id="curTemp">Current temp: ----</div>
+                <div id="maxTemp">max temp: ----</div>
+                <div id="minTemp">min temp: ----</div>
+            </div>
+
+            <div class="sideCard">
+                <h2>Enter City Name</h2>
+                <form action="" class="cityNameForm">
+                    <input
+                        autocomplete="off"
+                        type="text"
+                        name=""
+                        id="cityNameInput"
+                        placeholder="City"
+                    />
+                    <button id="formSubmitButton" type="button">Search</button>
+                </form>
+                <div class="controls">
+                    <img src="/images/previous.png" alt="" id="decrease" />
+                    <h2>Day</h2>
+                    <img src="/images/next.png" alt="" id="increase" />
+                </div>
+
+                <div class="units">
+                    <h2>Units</h2>
+                    <div>
+                        <input
+                            type="radio"
+                            name="units"
+                            value="c"
+                            id="celsiusRadio"
+                        />
+                        <label for="Celsius">Celsius</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            name="units"
+                            value="f"
+                            id="farenheitRadio"
+                        />
+                        <label for="Farenheit">Farenheit</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
